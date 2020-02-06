@@ -1,4 +1,4 @@
-package OOP.DogDemo;
+package OOP;
 
 class Dog {
     String name;

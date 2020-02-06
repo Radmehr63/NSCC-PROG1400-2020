@@ -1,34 +1,31 @@
-package Doubles;
+package OOP;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Doubles {
-
-    public static void runGame() {
+public class DoublesGame {
+    public static void run() {
 
         // two dice for the doubles game
-        int die1;
-        int die2;
+        Die die1 = new Die();
+        Die die2  = new Die();
 
         // player starts with $100
         int money = 100;
 
         Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
         String input;
 
         System.out.println("The Game Begins!");
         do {
             // roll the dice
-            die1 = random.nextInt(6) + 1;
-            die2 = random.nextInt(6) + 1;
+            die1.roll();
+            die2.roll();
 
-            System.out.print("You rolled a " + die1);
-            System.out.println(" and a " + die2);
+            System.out.print("You rolled a " + die1.value);
+            System.out.println(" and a " + die2.value);
 
             // shot doubles!
-            if (die1 == die2) {
+            if (die1.value == die2.value) {
                 System.out.println("You WIN!! ");
                 money *= 2;
             } else {
@@ -50,9 +47,4 @@ public class Doubles {
         } while(input.equals("y"));
         System.out.println("The Game Ends...");
     }
-
-    public static void main(String[] args) {
-        runGame();
-    }
-
 }
