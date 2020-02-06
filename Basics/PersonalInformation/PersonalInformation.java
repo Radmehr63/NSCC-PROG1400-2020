@@ -1,4 +1,4 @@
-package PersonalInformation;
+package Basics.PersonalInformation;
 
 public class PersonalInformation {
     public static void main(String[] args) {

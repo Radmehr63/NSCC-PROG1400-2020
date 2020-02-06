@@ -1,5 +1,6 @@
+package Basics;
 
-    class HelloWorld {
+class HelloWorld {
         // This is my first Java program.
 
         public static void main(String[] args) {

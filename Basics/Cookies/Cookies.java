@@ -1,4 +1,4 @@
-package Cookies;
+package Basics.Cookies;
 
     import java.util.Scanner;
 
